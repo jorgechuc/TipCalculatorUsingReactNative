@@ -1,7 +1,7 @@
 import { Button } from "react-native";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function About() {
+export default function About({navigation}) {
   return (
     <View style={styles.container}>
       <Text style={styles.softwareName}>Calculadora de propinas</Text>
@@ -9,7 +9,7 @@ export default function About() {
       <View style={styles.buttonContainer}>
         <Button
           title="Preferencias"
-        //   onPress={() => navigation.navigate("About")}
+          onPress={() => navigation.navigate("UserPreferences")}
         />
       </View>
     </View>
